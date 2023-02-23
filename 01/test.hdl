@@ -1,0 +1,8 @@
+CHIP test
+{
+    IN in[5];
+    OUT out;
+
+    PARTS:
+        And8Way(in[0..4]=in,in[5..7]=true, out=out);
+}
